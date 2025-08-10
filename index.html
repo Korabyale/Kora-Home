@@ -537,18 +537,23 @@
   <p>Si tienes dudas o consultas, contáctanos:</p>
   <p><a href="https://wa.me/50662204304" target="_blank" rel="noopener noreferrer">WhatsApp: 6220-4304</a></p>
   <p><a href="mailto:byalekora@gmail.com">Correo: byalekora@gmail.com</a></p>
-  <form action="https://formsubmit.co/byalekora@gmail.com" method="POST">
+
+  <form action="https://formsubmit.co/byalekora@gmail.com" method="POST" target="_blank">
     <input type="text" name="nombre" placeholder="Tu nombre" required />
     <input type="text" name="contacto" placeholder="Tu número o correo" required />
-    <select name="preferencia">
+    <select name="preferencia" required>
+      <option value="" disabled selected>-- Selecciona preferencia de contacto --</option>
       <option value="whatsapp">Quiero ser contactado por WhatsApp</option>
       <option value="correo">Quiero ser contactado por Correo</option>
     </select>
-    <textarea name="mensaje" placeholder="Escribe tu consulta..." rows="4"></textarea>
+    <textarea name="mensaje" placeholder="Escribe tu consulta..." rows="4" required></textarea>
+
     <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_next" value="https://korabyale.github.io/Kora-Home/" />
+    <input type="hidden" name="_next" value="https://korabyale.github.io/Kora-Home/gracias.html" />
+
     <button type="submit">Enviar</button>
   </form>
+
 </section>
 
   </main>
@@ -776,3 +781,4 @@
 </body>
 
 </html>
+
