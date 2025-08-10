@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kora Home - Carrito Funcional</title>
+  <title>Kora by Ale - Mi tienda virtual</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
   <style>
     html {
@@ -14,6 +14,7 @@
       box-sizing: inherit;
     }
     body {
+      
       font-family: 'Playfair Display', serif;
       background-color: #fffdfb;
       margin: 0;
@@ -22,6 +23,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      
     }
     header {
       background-color: #f7d7d0;
@@ -515,7 +517,7 @@
   </header>
 
   <div class="carousel" aria-live="polite" role="banner">
-    "Haz de tu hogar un espacio cálido, con estilo y a tu alcance."
+    "Para todos los gustos."
   </div>
 
   <main class="container">
@@ -532,28 +534,20 @@
     </section>
 
     <!-- Sección Ayuda debajo de productos -->
-   <section id="ayuda" class="seccion-tarjeta">
+<section id="ayuda" class="seccion-tarjeta">
   <h2>Ayuda</h2>
   <p>Si tienes dudas o consultas, contáctanos:</p>
   <p><a href="https://wa.me/50662204304" target="_blank" rel="noopener noreferrer">WhatsApp: 6220-4304</a></p>
   <p><a href="mailto:byalekora@gmail.com">Correo: byalekora@gmail.com</a></p>
-
-  <form action="https://formsubmit.co/byalekora@gmail.com" method="POST" target="_blank">
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="text" name="contacto" placeholder="Tu número o correo" required />
-    <select name="preferencia" required>
-      <option value="" disabled selected>-- Selecciona preferencia de contacto --</option>
-      <option value="whatsapp">Quiero ser contactado por WhatsApp</option>
-      <option value="correo">Quiero ser contactado por Correo</option>
-    </select>
-    <textarea name="mensaje" placeholder="Escribe tu consulta..." rows="4" required></textarea>
-
-    <input type="hidden" name="_captcha" value="false" />
-
-    <button type="submit">Enviar</button>
-  </form>
-
+  
+  <p>¿Quieres enviarnos una consulta?  
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDnbzY-OJceD8-l0kc0BuKMAhpBaEF5mI-1gZeEX6mNWMcPw/viewform?usp=sf_link" 
+       target="_blank" rel="noopener noreferrer">
+      Haz clic aquí para abrir el formulario
+    </a>
+  </p>
 </section>
+
 
   </main>
   <aside class="carrito" id="carrito" aria-label="Carrito de compras" aria-live="polite" aria-atomic="true">
@@ -579,7 +573,7 @@
 <script>
   // Datos de productos (20 ejemplo, pon tus imágenes en carpeta img/productos)
   const productos = [
-    { id: 1, nombre: "Alfombra Bohemia", descripcion: "Alfombra tejida a mano para dar calidez.", precio: 12000, imagen: "img/productos/alfombra_bohemia.jpg" },
+    { id: 1, nombre: "Aromatizador", descripcion: "Aromatizador para vehículo.", precio: 800, imagen: "pinito.jpg"  }, 
     { id: 2, nombre: "Velas Aromáticas", descripcion: "Velas hechas con cera natural y aroma a lavanda.", precio: 3500, imagen: "img/productos/velas_aromaticas.jpg" },
     { id: 3, nombre: "Cuadro Moderno", descripcion: "Arte moderno para tus paredes.", precio: 8000, imagen: "img/productos/cuadro_moderno.jpg" },
     { id: 4, nombre: "Maceta Cerámica", descripcion: "Ideal para plantas pequeñas y medianas.", precio: 5000, imagen: "img/productos/maceta_ceramica.jpg" },
@@ -778,7 +772,6 @@
 </script>
 
 </body>
-
 </html>
 
 
